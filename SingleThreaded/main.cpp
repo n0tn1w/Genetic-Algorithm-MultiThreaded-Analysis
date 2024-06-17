@@ -28,6 +28,6 @@ int main() {
     ga.runFor(20'000);
 
     const auto runtime = high_resolution_clock::now() - start;
-    //std::cout << duration_cast<minutes>(runtime) << ' ' << duration_cast<seconds>(runtime) % 60 << ' ' << duration_cast<milliseconds>(runtime) % 1000 << ' ' << duration_cast<microseconds>(runtime) % 1000;
+    std::cout << duration_cast<minutes>(runtime).count() << ' ' << duration_cast<seconds>(runtime).count() % 60 << ' ' << duration_cast<milliseconds>(runtime).count() % 1000 << ' ' << duration_cast<microseconds>(runtime).count() % 1000;
     return 0;
 }
